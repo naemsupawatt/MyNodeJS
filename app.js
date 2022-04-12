@@ -6,7 +6,7 @@ var cron = require('node-cron');
 const axios = require('axios');
 
 
-const port = 3000;
+let PORT = process.env.PORT || 3000;
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     // databaseURL: "https://flutter-realtime-databas-baf14-default-rtdb.firebaseio.com"
@@ -97,7 +97,7 @@ let getNotify = async () => {
 // setInterval(getNotify, 1000);
 
 
-app.listen(port, () => {
-    console.log(`Listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Server started on port 3000`);
 });
 

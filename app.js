@@ -88,7 +88,8 @@ let getNotify = async () => {
                         'Authorization': 'key=AAAAIDSa6GU:APA91bEwWV2cVq2RcJrb_Y8aTex7Bfvq9qvq6htFr8r4TGQG7DK4bSrXyqjPOcimkGnu5J7FEqO2Wwab2xwGWiQRj2UA8qEwywfpWa49K3koGGxRd-IPpv0VzQ7xpBRN1MIA-G7F095d',
                         'content-type': 'application/json'
                     }
-                });
+                }
+                );
             }
         });
     });
